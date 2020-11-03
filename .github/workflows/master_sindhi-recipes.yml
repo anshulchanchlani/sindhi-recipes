@@ -21,7 +21,7 @@ jobs:
         node-version: '14.x'
         registry-url: https://registry.npmjs.org/
 
-    - name: yarn install, build, and test
+    - name: yarn install and build
       run: |
         yarn install --network-timeout 100000
         yarn build
@@ -32,4 +32,4 @@ jobs:
         app-name: 'sindhi-recipes'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_582609eeb7314edab854a8612171d1d7 }}
-        package: .
+        package: ./public
