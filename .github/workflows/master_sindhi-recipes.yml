@@ -25,7 +25,6 @@ jobs:
       run: |
         yarn install --network-timeout 100000
         yarn build
-        yarn test
 
     - name: 'Deploy to Azure Web App'
       uses: azure/webapps-deploy@v2
