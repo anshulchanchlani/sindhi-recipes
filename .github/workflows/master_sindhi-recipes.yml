@@ -32,4 +32,4 @@ jobs:
         app-name: 'sindhi-recipes'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_582609eeb7314edab854a8612171d1d7 }}
-        package: ./public
+        package: .
